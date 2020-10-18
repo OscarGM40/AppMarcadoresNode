@@ -1,0 +1,167 @@
+{{!-- <div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>LogIn</h3>
+                </div>
+                <div class="card-body">
+                    <img src="/imagenes/logo.png" alt="logo Fatz" class="card-img-top mx-auto  mb-3 rounded-circle w-50">
+                
+                    <form action="/login" method="post">
+                  
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="UserName" autofocus>
+                    </div>
+                  
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control"placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block">
+                            LogIn
+                        </button>
+                        <button type="reset"  class="btn btn-info btn-block w-75 mx-auto">Clear Fields</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+ <style>
+        @font-face {
+            font-family: fuenteOleo;
+            src: url(fonts/OleoScript-Regular.ttf);
+        }
+
+        body {
+            background-image: url(imagenes/railway-station-1363771_1920.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .formulario {
+            width: 35%;
+            transition: 2s;
+            margin-top: 30px;
+            box-shadow: 0px 0px 40px red, 0px 0px 80px white;
+        }
+
+        .logo {
+            height: 75px;
+            margin-top: 40px;
+        }
+
+        .espaciado {
+            margin-top: 40px;
+        }
+
+        h3,
+        h4 {
+            color: white;
+            text-align: center;
+        }
+
+        legend {
+            border: none;
+        }
+
+        fieldset{
+            transition: 2s;
+            margin-bottom: 50px;
+            border-color: rgba(213, 0, 0, 1);
+            border-style: groove;
+            border-width: 5px;
+            border-radius: 20px;
+        }
+
+        .Input {
+            transition: .8s;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-color: #006;
+            border-bottom-color: white;
+            border-bottom-style: groove;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-width: 6px;
+        }
+
+        .Input:hover {
+            transition: .8s;
+            background-color: rgba(55, 71, 79, 0.5);
+            box-shadow: inset;
+            border-bottom-color: red;
+        }
+
+        .Input:focus {
+            transition: .8s;
+            border-bottom-color: red;
+        }
+
+        @media screen and (max-width: 750px){
+            .formulario{
+                width: 95%;
+                margin-top: 30px;
+            }
+            .logo{
+                height: 50px;
+            }
+        }
+
+    </style>
+
+    <div class="container formulario">
+        <div class="row">
+            <div class="col-xs-4 mx-auto">
+                <img src="imagenes/ejecutivo_logo.png" alt="" class="logo">
+            </div>
+
+        </div>
+
+        <div class="espaciado">
+
+        </div>
+        <div class="row">
+            <fieldset class="col-sm-10 offset-sm-1">
+
+                <legend class="hidden-sm">
+                    <h3>Inicio de Sesi&oacute;n</h3>
+                </legend>
+
+                <form action="/login" method="post" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label class="col-sm-12" for="usuario">
+                            <h4>UserName</h4>
+                        </label>
+                        <div class="col-sm-10 offset-sm-1">
+                            <input type="text" name="username" id="usuario" class="form-control Input" autofocus="true" placeholder="UserName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-12" for="password">
+                            <h4>Password</h4>
+                        </label>
+                        <div class="col-sm-10 offset-sm-1">
+                            <input type="password" name="password" id="password" class="form-control Input" placeholder="Enter Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <button type="submit" class="btn btn-danger col-sm-9 offset-sm-1 btn-block mx-auto ">Enviar Datos</button>
+                    </div>
+
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+
+
