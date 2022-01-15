@@ -8,9 +8,9 @@ module.exports = {
     //     database:'database_links'
     // }
     database :{
-        host:'bb1qz1orcpqiteu8pwkj-mysql.services.clever-cloud.com',
+        host:'bi78qjxdxlgrymetkf30-mysql.services.clever-cloud.com',
         user:'uoifi2xlwmhrl2jy',
         password:'rTx8xwXLD9AY5WGOd0LT',
-        database:'bb1qz1orcpqiteu8pwkj'
+        database:'bi78qjxdxlgrymetkf30'
     }
 }
